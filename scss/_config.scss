@@ -10,6 +10,10 @@ $background-opacity: 0.9;
   transition: all 1s ease-out;
 }
 
+@mixin burgerSpin {
+  transition: all 0.45s ease-out;
+}
+
 @mixin background {
   @if $show-home-image {
     &#bg-img {
