@@ -11,7 +11,7 @@
     width: 28px;
     height: 3px;
     margin: 0 0 5px 0;
-    background: #fff;
+    background: set-text-color($primary-color);
     @include burgerSpin;
   }
 
@@ -62,7 +62,7 @@
     overflow: hidden;
   }
 
-  // Nav Side
+  // Nav Links
   &-nav {
     margin: 0;
     padding: 0;
@@ -76,7 +76,7 @@
     }
   }
 
-  // Branding Side
+  // Branding
   &-branding {
     background: $primary-color;
     transform: translate3D(0, 100%, 0);
@@ -118,7 +118,7 @@
     text-transform: uppercase;
     padding: 1rem 0;
     font-weight: 300;
-    color: #fff;
+    color: set-text-color($primary-color);
     text-decoration: none;
     @include easeOut;
 

@@ -46,6 +46,16 @@
       background: url(../img/portrait-sm.jpeg) no-repeat center cover/cover;
     }
   }
+
+  .about-info {
+    grid-template-areas:
+      'bioimage'
+      'bio'
+      'job1'
+      'job2'
+      'job3';
+    grid-template-columns: 1fr;
+  }
 }
 
 // Smartphone
