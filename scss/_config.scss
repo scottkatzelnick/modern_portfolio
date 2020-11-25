@@ -1,6 +1,6 @@
 // Variables
 $primary-color: #444;
-$secondary-color: #eece1a;
+$secondary-color: #dd8b1f;
 $show-home-image: true;
 $home-image: url(../img/background.jpg);
 $background-opacity: 0.9;
@@ -32,5 +32,30 @@ $background-opacity: 0.9;
         z-index: -1;
       }
     }
+  }
+}
+
+// Media Query Mixins
+@mixin mediaSmall {
+  @media screen and (max-width: 500px) {
+    @content;
+  }
+}
+
+@mixin mediaMedium {
+  @media screen and (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin mediaLargeRange {
+  @media screen and (min-width: 769px) and (max-width: 1170px) {
+    @content;
+  }
+}
+
+@mixin mediaXLarge {
+  @media screen and (min-width: 1171px) {
+    @content;
   }
 }
