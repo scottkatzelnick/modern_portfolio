@@ -30,9 +30,14 @@ h3 {
   }
 
   &.sm-heading {
+    display: inline-block;
     margin-bottom: 2rem;
     padding: 0.2rem 1rem;
-    background: rgba(lighten($primary-color, 2), 0.5);
+    background: rgba(lighten($primary-color, 2), 0.75);
+  }
+
+  &.hire-btn {
+    cursor: pointer;
   }
 }
 
@@ -142,6 +147,174 @@ main {
       opacity: 0.5;
       border-color: $secondary-color;
       @include easeOut;
+    }
+  }
+}
+
+// Contact Page
+.contact-cards {
+  display: grid;
+  grid-template-columns: 1fr min-content 1fr;
+  justify-items: center;
+  align-items: center;
+  margin-top: 5rem;
+  width: 100%;
+
+  .upwork-img {
+    width: 100px;
+    height: 150px;
+  }
+
+  .boxes:nth-child(1) {
+    display: flex;
+    flex-flow: column nowrap;
+    background: darken($primary-color, 5);
+    text-align: center;
+    padding: 5rem;
+    border-radius: 8px;
+    width: 275px;
+    height: 400px;
+    margin-right: -20px;
+    margin-top: auto;
+    margin-bottom: auto;
+    justify-self: end;
+
+    .text-secondary {
+      font-size: 2.5rem;
+      margin-top: -2rem;
+    }
+
+    p {
+      margin-top: 2.5rem;
+      font-size: 1.25rem;
+    }
+
+    a {
+      margin-top: 0rem;
+      border-radius: 50%;
+      border: none;
+      background: transparent;
+    }
+
+    a:hover {
+      border-radius: 50%;
+      background: $secondary-color;
+      @include easeOut;
+    }
+  }
+
+  .boxes:nth-child(2) {
+    display: flex;
+    flex-flow: column nowrap;
+    background: lighten($primary-color, 5);
+    text-align: center;
+    padding: 2.5rem 5rem 5rem 5rem;
+    border-radius: 8px;
+    height: 475px;
+    z-index: 1;
+
+    .text-secondary {
+      font-size: 2.5rem;
+      margin: -2rem auto 2rem auto;
+    }
+
+    input {
+      text-align: center;
+      margin-bottom: 1.5rem;
+      border-radius: 4px;
+      border: none;
+      outline: none;
+      width: 25rem;
+      height: 25px;
+      padding: 0.25rem 0.5rem;
+    }
+
+    textarea {
+      text-align: left;
+      border-radius: 4px;
+      border: none;
+      outline: none;
+      padding: 0.25rem 0.5rem;
+      min-width: 100%;
+      height: 100px;
+    }
+
+    .g-recaptcha {
+      transform: scale(0.65);
+
+      iframe {
+        border-radius: 15px;
+      }
+    }
+
+    .captcha {
+      display: flex;
+      position: relative;
+      justify-content: center;
+      align-items: center;
+    }
+    .captcha-fake-field {
+      position: absolute;
+      background: transparent;
+      bottom: 0;
+      border: none;
+      display: block;
+      height: 1px;
+      width: 1px;
+      top: 50%;
+      left: 50%;
+      z-index: -1;
+    }
+
+    .contact-btn {
+      margin: 0;
+      width: 80%;
+      height: 30px;
+      border-radius: 4px;
+      border: none;
+      outline: none;
+
+      &:hover {
+        background-color: $secondary-color;
+        @include easeOut;
+      }
+    }
+  }
+
+  .boxes:nth-child(3) {
+    display: flex;
+    flex-flow: column nowrap;
+    background: darken($primary-color, 5);
+    text-align: center;
+    padding: 5rem;
+    border-radius: 8px;
+    width: 275px;
+    height: 400px;
+    margin-left: -20px;
+    justify-self: start;
+
+    .text-secondary {
+      font-size: 2.5rem;
+      margin: -2rem auto 2rem auto;
+    }
+
+    .resume,
+    .linkedin {
+      display: block;
+    }
+
+    .btn-link:link,
+    .btn-link:visited {
+      color: #fff;
+      font-size: 14px;
+      font-weight: bold;
+      text-align: center;
+      text-decoration: none;
+      text-transform: uppercase;
+      overflow: hidden;
+      letter-spacing: 0.08em;
+      border-radius: 0;
+      text-shadow: 0 0 1px rgba(0, 0, 0, 0.2), 0 1px 0 rgba(0, 0, 0, 0.2);
     }
   }
 }

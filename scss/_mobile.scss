@@ -5,10 +5,66 @@
   }
 }
 
-// Desktops & Laptops
+// Desktops & HD Laptops
 @include mediaLargeRange {
   .projects {
     grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+// Small Desktops & Large Laptops
+@include mediaMediumToLarge {
+  .contact-cards {
+    display: flex;
+    flex-flow: column nowrap;
+
+    .boxes:nth-child(1),
+    .boxes:nth-child(2),
+    .boxes:nth-child(3) {
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      min-width: 275px;
+      height: auto;
+      margin: 1rem 1rem;
+      padding: 5rem 0;
+
+      .text-secondary {
+        font-size: 2rem;
+        margin: auto 2rem auto;
+      }
+    }
+
+    .boxes:nth-child(1) {
+      p {
+        padding: 0 1rem;
+      }
+      a {
+        width: 150px;
+      }
+    }
+
+    .boxes:nth-child(2) {
+      input {
+        width: 50%;
+      }
+
+      #message {
+        width: 50%;
+        min-width: 30%;
+      }
+
+      .captcha {
+        width: 200px;
+        margin: auto;
+      }
+
+      .contact-btn {
+        max-width: 40%;
+      }
+    }
   }
 }
 
@@ -70,11 +126,36 @@
 
 // Smartphone
 @include mediaSmall {
+  main {
+    .lg-heading {
+      margin-top: 10vmin;
+      font-size: 5vmax;
+    }
+  }
+
   main#home h1 {
     margin-top: 10vh;
+    font-size: 4vmax;
+  }
+
+  .sm-heading {
+    margin-top: 6rem;
   }
 
   .projects {
     grid-template-columns: 1fr;
+  }
+}
+
+// Ultra Thin Devices
+@include mediaXSmall {
+  .about-info {
+    .bio-image {
+      width: 175px;
+    }
+  }
+
+  .menu-nav {
+    justify-content: space-evenly;
   }
 }

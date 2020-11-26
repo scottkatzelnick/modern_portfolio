@@ -45,6 +45,12 @@ $background-opacity: 0.9;
 }
 
 // Media Query Mixins
+@mixin mediaXSmall {
+  @media screen and (max-width: 348px) {
+    @content;
+  }
+}
+
 @mixin mediaSmall {
   @media screen and (max-width: 500px) {
     @content;
@@ -53,6 +59,12 @@ $background-opacity: 0.9;
 
 @mixin mediaMedium {
   @media screen and (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin mediaMediumToLarge {
+  @media screen and (max-width: 1044px) {
     @content;
   }
 }
