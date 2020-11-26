@@ -47,6 +47,10 @@
     }
 
     .boxes:nth-child(2) {
+      .text-secondary {
+        margin-bottom: 2rem;
+      }
+
       input {
         width: 50%;
       }
@@ -64,6 +68,12 @@
       .contact-btn {
         max-width: 40%;
       }
+    }
+
+    .resume,
+    .linkedin {
+      min-width: 20rem;
+      max-width: 30%;
     }
   }
 }
@@ -144,6 +154,15 @@
 
   .projects {
     grid-template-columns: 1fr;
+  }
+
+  #main-footer {
+    font-size: 10%;
+
+    #git,
+    #npm {
+      display: none;
+    }
   }
 }
 

@@ -148,5 +148,6 @@ typings/
 !.vscode/launch.json
 !.vscode/extensions.json
 *.code-workspace
+.prettier**
 
 # End of https://www.toptal.com/developers/gitignore/api/vscode,node,macos
