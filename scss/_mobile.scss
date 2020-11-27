@@ -72,7 +72,7 @@
 
     .resume,
     .linkedin {
-      min-width: 20rem;
+      min-width: 250px;
       max-width: 30%;
     }
   }
@@ -155,9 +155,11 @@
   .projects {
     grid-template-columns: 1fr;
   }
+}
 
+@include mediaFooterFit {
   #main-footer {
-    font-size: 10%;
+    font-size: 10px;
 
     #git,
     #npm {
@@ -176,5 +178,9 @@
 
   .menu-nav {
     justify-content: space-evenly;
+  }
+
+  #main-footer {
+    font-size: 8px;
   }
 }

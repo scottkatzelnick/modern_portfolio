@@ -15,3 +15,6 @@ menuButton.addEventListener('click', () => {
     item.classList.toggle('show');
   });
 });
+
+// Read User Browser For CSS Compatability Issues
+document.documentElement.setAttribute('data-browser', navigator.userAgent);

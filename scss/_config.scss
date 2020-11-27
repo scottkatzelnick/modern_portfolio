@@ -39,6 +39,17 @@ $background-opacity: 0.9;
   }
 }
 
+// Target Specific Browsers
+@mixin firefox-only {
+  @at-root {
+    @-moz-document url-prefix() {
+      & {
+        @content;
+      }
+    }
+  }
+}
+
 // Set Light Mode Colors
 @function set-text-color($color) {
   @if (lightness($color) > 40) {
@@ -51,6 +62,12 @@ $background-opacity: 0.9;
 // Media Query Mixins
 @mixin mediaXSmall {
   @media screen and (max-width: 348px) {
+    @content;
+  }
+}
+
+@mixin mediaFooterFit {
+  @media screen and (max-width: 400px) {
     @content;
   }
 }
