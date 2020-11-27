@@ -76,17 +76,14 @@
         </div>
         <div class="boxes">
           <span class="text-secondary">Reach Out</span>
-          <form action="https://formspree.io/f/mwkrorrl" method="POST">
+          <p class="submit-msg"></p>
+          <form id="contact-form" action="https://formspree.io/f/mwkrorrl" method="POST">
             <input id="first-name" type="text" name="first-name" placeholder="First Name" required>
             <input id="last-name" type="text" name="last-name" placeholder="Last Name" required>
             <input id="email" type="email" name="email" placeholder="Email" required>
             <input id="phone" type="tel" name="phone" placeholder="Phone">
             <textarea name="message" id="message" required></textarea>
-            <div class="captcha">
-              <div class="g-recaptcha" data-sitekey="6Ld0Ye0ZAAAAAKe9m_8BCzSuzbCgG6MHbDXB3MUM" data-callback="removeFakeCaptcha" data-theme="dark" data-size="normal"></div>
-              <input type="checkbox" class="captcha-fake-field" tabindex="-1" required>
-            </div>
-            <button class="contact-btn" type="submit">Send Message</button>
+            <button class="contact-btn">Send Message</button>
           </form>
         </div>
         <div class="boxes">

@@ -125,8 +125,14 @@
       'bio'
       'job1'
       'job2'
-      'job3';
+      'job3'
+      'job4'
+      'skills';
     grid-template-columns: 1fr;
+  }
+
+  .skill-type {
+    display: block;
   }
 
   .projects {
