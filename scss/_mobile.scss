@@ -138,6 +138,22 @@
   .projects {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  main {
+    padding: 4rem 10px;
+
+    .contact-cards {
+      .boxes:nth-child(2) {
+        input {
+          min-width: 80%;
+        }
+
+        #message {
+          min-width: 80%;
+        }
+      }
+    }
+  }
 }
 
 // Smartphone
@@ -160,6 +176,22 @@
 
   .projects {
     grid-template-columns: 1fr;
+  }
+
+  main {
+    padding: 4rem 10px;
+
+    .contact-cards {
+      .boxes:nth-child(2) {
+        input {
+          min-width: 90%;
+        }
+
+        #message {
+          min-width: 90%;
+        }
+      }
+    }
   }
 }
 
